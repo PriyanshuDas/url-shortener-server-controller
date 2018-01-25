@@ -1,0 +1,29 @@
+Browser
+    - Enter url
+        - Submit button
+        - On submit
+            - Verify Regular expression
+            - Sent XMLHttpRequest object via post request to Node server
+
+    - Output URL
+        - On reply from XML Request
+        - Update URL
+        - Or send message if wrong URL, etc.
+
+
+Node Server
+
+    - Get XMLHttp Request from Browser
+        - Send Url for shortening to API Server
+        - Get reply
+    - Based on reply, send response back to browser
+
+API Server
+
+    - Has two functions
+        - (longURL) ---> (shortURL) [DB Create]         [Use hash?]
+        - (shortURL) ---> (longURL) [DB Request]
+
+MongoDB
+    - Gets Create
+    - Gets Request

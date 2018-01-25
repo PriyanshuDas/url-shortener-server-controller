@@ -1,0 +1,12 @@
+extends layout
+
+block content
+	h1 URL Shortener
+	div.inputBox
+		span.inputSpan Input URL :
+			input.inputText(type=text name='inputText' placeholder= 'Enter URL to be shortened')
+			button.btn.btn-default(name='submitButton' onclick='processURL()') Submit
+			span.inputSpanError
+	div.outputBox
+		span.outputSpan Output URL
+		input.outputText(type=text name='outputText' placeholder='Output' disabled = true)
